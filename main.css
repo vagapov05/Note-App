@@ -1,0 +1,81 @@
+body {
+   margin: 0;
+   padding: 0;
+
+   font-family: 'Courier New', Courier, monospace;
+
+   background: linear-gradient(to left, lightgreen, lightblue);
+}
+
+.heading {
+   padding-top: 10px;
+
+   font-size: 35px;
+   text-align: center;
+   color: darkblue;
+}
+
+.info-text {
+   font-size: 18px;
+   text-align: center;
+   color: darkblue;
+}
+
+.app {
+   padding: 50px;
+
+   display: grid;
+   grid-template-columns: repeat(auto-fill, 300px);
+   gap: 40px;
+   justify-content: center;
+}
+
+.note {
+   padding: 17px;
+   height: 200px;
+
+   font-size: 18px;
+   color: darkblue;
+
+   resize: none;
+   outline: none;
+   border: none;
+   border-radius: 15px;
+   box-sizing: border-box;
+   box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+   background-color: rgba(255, 255, 255, .1);
+}
+
+.note::placeholder {
+   color: gray;
+
+   opacity: 30%;
+}
+
+.note:hover, 
+.note:focus {
+   transition: all 300ms ease;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.btn {
+   height: 200px;
+
+   font-size: 70px;
+   font-weight: 700;
+   color: rgba(0, 0, 0, .3);
+
+   outline: none;
+   cursor: pointer;
+   border-radius: 15px;
+   border-color: rgba(255, 255, 255, .37);
+   box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+   background-color: rgba(255, 255, 255, .27);
+}
+
+.btn:hover {
+   color: rgba(0, 0, 0, .6);
+
+   transition: all 300ms ease;
+   background-color: rgba(255, 255, 255, .55);
+}
